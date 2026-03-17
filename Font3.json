@@ -1,13 +1,16 @@
 {
   "name": "Dyslexia",
-  "author": ["Tropical#8908", "Qwerasd#5202"],
+  "description": "A simple discord theme which makes the app more accommodating to people with dyslexia (word spacing, letter spacing, message line height).",
+  "authors": [
+    {
+      "name": "Tropical#8908"
+    },
+    {
+      "name": "Qwerasd#5202"
+    }
+  ],
   "version": "1.0",
-  "description": "A simple discord theme which makes the app more accommodating to people with dyslexia.",
-  "source": "https://github.com/DiscordStyles/discord-dyslexia/",
-  "import": "https://discordstyles.github.io/discord-dyslexia/src/base.css",
-  "settings": {
-    "word-spacing": "3px",
-    "letter-spacing": "0.25px",
-    "message-line-spacing": 2
-  }
+  "semanticColors": {},
+  "rawColors": {},
+  "customCss": "/* Dyslexia spacing + OpenDyslexic fallback */\n:root {\n  --word-spacing: 3px;\n  --letter-spacing: 0.25px;\n  --message-line-spacing: 2;\n}\n::-webkit-input-placeholder, body, button, input, select, textarea {\n    word-spacing: var(--word-spacing) !important;\n    letter-spacing: var(--letter-spacing) !important;\n}\n[class*=\"messageContent-\"] {\n    line-height: var(--message-line-spacing) !important;\n}\n/* Scale timestamps */\n[class*=\"group-spacing\"] [class*=\"timestamp\"],\n[class*=\"messageContent-\"] time {\n    font-size: .9rem;\n}"
 }
