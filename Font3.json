@@ -1,12 +1,18 @@
 {
   "name": "Dyslexia",
-  "description": "Dyslexia-friendly theme with extra word/letter spacing and line height. Pairs perfectly with OpenDyslexic or Atkinson Hyperlegible font.",
+  "description": "Dyslexia-friendly spacing (word 3px, letter 0.25px, line height 2) + better readability. Pairs great with Atkinson Hyperlegible / OpenDyslexic font.",
   "authors": [
-    { "name": "Tropical#8908" },
-    { "name": "Qwerasd#5202" }
+    {
+      "name": "Tropical#8908",
+      "discordID": "0"
+    },
+    {
+      "name": "Qwerasd#5202",
+      "discordID": "0"
+    }
   ],
-  "version": "1.1",
+  "version": "1.2",
   "semanticColors": {},
   "rawColors": {},
-  "customCss": "/* Dyslexia readability tweaks */\n:root {\n  --dyslexia-word-spacing: 3px;\n  --dyslexia-letter-spacing: 0.25px;\n  --dyslexia-line-height: 2;\n}\n\n/* Apply spacing to all text */\nbody, textarea, input, button, select, .messageContent-3q2W1t, .markup-2BOw-j {\n  word-spacing: var(--dyslexia-word-spacing) !important;\n  letter-spacing: var(--dyslexia-letter-spacing) !important;\n}\n\n/* Message line height */\n.messageContent-3q2W1t, .contents-2mQqc9 {\n  line-height: var(--dyslexia-line-height) !important;\n}\n\n/* Slightly larger timestamps & reduce visual clutter */\n.timestamp-3ZCmNB, time {\n  font-size: 0.9rem !important;\n}\n\n/* Better contrast for dyslexia */\n.textArea-12jDsm {\n  background-color: rgba(0,0,0,0.3) !important;\n}"
+  "customCss": "/* Dyslexia readability tweaks */\n:root {\n  --dyslexia-word-spacing: 3px;\n  --dyslexia-letter-spacing: 0.25px;\n  --dyslexia-line-height: 2;\n}\n\n/* Apply to all text */\nbody, textarea, input, button, select, .messageContent, .markup, .textArea {\n  word-spacing: var(--dyslexia-word-spacing) !important;\n  letter-spacing: var(--dyslexia-letter-spacing) !important;\n}\n\n/* Message line height */\n.messageContent, .contents, [class*=\"messageContent\"], [class*=\"contents\"] {\n  line-height: var(--dyslexia-line-height) !important;\n}\n\n/* Timestamps smaller to reduce clutter */\n.timestamp, time, [class*=\"timestamp\"] {\n  font-size: 0.9rem !important;\n}\n\n/* Slight background contrast for better focus */\n.textArea {\n  background-color: rgba(0, 0, 0, 0.25) !important;\n}"
 }
