@@ -1,9 +1,9 @@
 {
-  "name": "Dyslexia",
-  "description": "Dyslexia spacing",
+  "name": "Dyslexia Spacing",
+  "description": "Word 3px, Letter 0.25px, Line height 2",
   "authors": [{ "name": "You" }],
   "version": "1.0",
   "semanticColors": {},
   "rawColors": {},
-  "customCss": "@import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);\n:root {\n    --word-spacing: 3px;\n    --letter-spacing: 0.25px;\n    --message-line-spacing: 2;\n}"
+  "customCss": "@import url('https://discordstyles.github.io/discord-dyslexia/src/base.css');\n:root {\n  --word-spacing: 3px;\n  --letter-spacing: 0.25px;\n  --message-line-spacing: 2;\n}"
 }
