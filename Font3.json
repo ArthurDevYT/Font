@@ -1,18 +1,12 @@
 {
   "name": "Dyslexia",
-  "description": "Dyslexia-friendly spacing (word 3px, letter 0.25px, line height 2) + better readability. Pairs great with Atkinson Hyperlegible / OpenDyslexic font.",
+  "description": "Dyslexia-friendly spacing and readability",
   "authors": [
-    {
-      "name": "Tropical#8908",
-      "discordID": "0"
-    },
-    {
-      "name": "Qwerasd#5202",
-      "discordID": "0"
-    }
+    { "name": "Tropical#8908" },
+    { "name": "Qwerasd#5202" }
   ],
   "version": "1.2",
   "semanticColors": {},
   "rawColors": {},
-  "customCss": "/* Dyslexia readability tweaks */\n:root {\n  --dyslexia-word-spacing: 3px;\n  --dyslexia-letter-spacing: 0.25px;\n  --dyslexia-line-height: 2;\n}\n\n/* Apply to all text */\nbody, textarea, input, button, select, .messageContent, .markup, .textArea {\n  word-spacing: var(--dyslexia-word-spacing) !important;\n  letter-spacing: var(--dyslexia-letter-spacing) !important;\n}\n\n/* Message line height */\n.messageContent, .contents, [class*=\"messageContent\"], [class*=\"contents\"] {\n  line-height: var(--dyslexia-line-height) !important;\n}\n\n/* Timestamps smaller to reduce clutter */\n.timestamp, time, [class*=\"timestamp\"] {\n  font-size: 0.9rem !important;\n}\n\n/* Slight background contrast for better focus */\n.textArea {\n  background-color: rgba(0, 0, 0, 0.25) !important;\n}"
+  "customCss": "/* Dyslexia spacing */\n:root {\n  --word-spacing: 3px;\n  --letter-spacing: 0.25px;\n  --line-height: 2;\n}\nbody, .messageContent, textarea, input, .markup {\n  word-spacing: var(--word-spacing) !important;\n  letter-spacing: var(--letter-spacing) !important;\n}\n.messageContent, .contents {\n  line-height: var(--line-height) !important;\n}\n.timestamp, time {\n  font-size: 0.9rem !important;\n}"
 }
