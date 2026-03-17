@@ -1,15 +1,12 @@
 {
   "name": "Dyslexia",
-  "description": "Dyslexia-friendly spacing: word 3px, letter 0.25px, line height 2. Best with OpenDyslexic or Atkinson Hyperlegible font.",
+  "description": "Full dyslexia theme with word/letter/line spacing (taken directly from the original CSS)",
   "authors": [
-    {
-      "name": "Tropical#8908"
-    },
-    {
-      "name": "Qwerasd#5202"
-    }
+    { "name": "Tropical#8908" },
+    { "name": "Qwerasd#5202" }
   ],
-  "version": "1.2",
+  "version": "1.0",
   "semanticColors": {},
-  "rawColors": {}
+  "rawColors": {},
+  "customCss": "/**\n * @name Dyslexia\n * @author Tropical#8908 & Qwerasd#5202\n * @version 1.0\n * @description A simple discord theme which makes the app more accommodating to people with dyslexia.\n * @source https://github.com/DiscordStyles/discord-dyslexia/\n */\n\n/* ----------------------------------------------------------------------- */\n\n/* IMPORT SOURCE CODE */\n@import url(https://discordstyles.github.io/discord-dyslexia/src/base.css);\n\n/* ----------------------------------------------------------------------- */\n\n/* SETTINGS */\n:root {\n    --word-spacing: 3px;       /* Word spacing */\n    --letter-spacing: 0.25px;  /* Letter Spacing */\n    --message-line-spacing: 2; /* Line spacing on messages */\n}"
 }
